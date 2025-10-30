@@ -34,7 +34,7 @@ javafx {
 }
 
 application {
-    mainClass = 'FXHelloWorldWithHandler' // path to your main class
+    mainClass = 'WelcomeWithHandler' // path to your main class
 }
 
 run {
