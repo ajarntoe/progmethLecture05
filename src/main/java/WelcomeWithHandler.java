@@ -72,21 +72,45 @@ public class WelcomeWithHandler extends Application {
 
         // add handler
         // press ESC to clear user text field
-        userTextField.setOnKeyPressed(new EventHandler<KeyEvent>() {
+       /*userTextField.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent ke) {
                 if (ke.getCode() == KeyCode.ESCAPE) {
                     userTextField.setText("");
                 }
             }
+        });*/
+
+        userTextField.setOnKeyPressed(e -> {
+            if (e.getCode() == KeyCode.ESCAPE) {
+                userTextField.setText("");
+            }
         });
+
+        /*userTextField.addEventHandler(KeyEvent.KEY_PRESSED, e -> {
+            if (e.getCode() == KeyCode.ESCAPE) {
+                userTextField.setText("");
+            }
+        }); */
+
+
         // change button width when mouse over
-        signinBtn.setOnMouseEntered(new EventHandler<MouseEvent>() {
+       /* signinBtn.setOnMouseEntered(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
                 signinBtn.setPrefWidth(75);
             }
+        });*/
+
+        signinBtn.setOnMouseEntered(e -> {
+            signinBtn.setPrefWidth(75);
         });
+
+        /*signinBtn.addEventHandler(MouseEvent.MOUSE_ENTERED, e -> {
+            signinBtn.setPrefWidth(75);
+        });*/
+
+
         signinBtn.setOnMouseExited(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
