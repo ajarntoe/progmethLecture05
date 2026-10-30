@@ -5,7 +5,7 @@ version = "1"
 
 application {
     // Ex. "src/main/java/game/DeckManager.java" becomes "game.Deckmanager"
-    mainClass.set("FXHelloWorld")
+    mainClass.set("MyApplication")
 }
 
 plugins {
